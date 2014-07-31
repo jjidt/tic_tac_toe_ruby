@@ -13,6 +13,4 @@ class Game
     @grid.mark_space(x, y, @players[turn].symbol)
     @turn ^= 1
   end
-
-
 end

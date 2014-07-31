@@ -140,6 +140,15 @@ describe "Game" do
       test_game.take_turn(1, 1)
       test_game.grid.board[4].mark.should eq 'O'
     end
+
+    # it 'checks the win condition for current player' do
+    #   test_game = Game.new(Player.new("JJ", "X"), Player.new("Justin", "O"))
+    #   test_game.take_turn(0, 0)
+    #   test_game.take_turn(2, 2)
+    #   test_game.take_turn(1, 0)
+    #   test_game.take_turn(2, 1)
+    #   test_game.take_turn(2, 0).should eq false
+    # end
   end
 end
 
