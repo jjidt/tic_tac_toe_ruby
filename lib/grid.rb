@@ -19,7 +19,6 @@ class Grid
          @board[get_index(index, 2)].mark == symbol
          return true
       end
-
       if @board[get_index(1, 1)].mark == symbol
         return true if  @board[get_index(0, 0)].mark == symbol &&
                         @board[get_index(2, 2)].mark == symbol
@@ -33,7 +32,7 @@ class Grid
   end
 
   def mark_space(x, y, sym)
-    @board[(y*3) + x].mark = sym
+    @board[get_index(x, y)].mark = sym
   end
 
   def get_index(x, y)
